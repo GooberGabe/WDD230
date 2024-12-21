@@ -1,4 +1,3 @@
-const baseURL = "https://goobergabe.github.io/wdd230/";
 const weatherURL = "https://api.openweathermap.org/data/2.5/weather?lat=39.57&lon=-84.23&appid=1184a90aee199bd2fdfa0ea4c5d68101";
 const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=39.57&lon=-84.23&appid=1184a90aee199bd2fdfa0ea4c5d68101";
 

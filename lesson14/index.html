@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scoots - Rental Options and Pricing for Motor Scooters, Jeeps, and ATVs in Cozumel">
+    <title>Rental Options - Scoots Cozumel</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/rentals.css">
+    <!-- normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="weather-alert" role="alert"></div>
+
+    <header>
+        <nav>
+            <a href="/" class="logo" aria-label="Scoots Home">
+                <i class="fas fa-motorcycle"></i> Scoots
+            </a>
+            <ul class="nav-links">
+                <li><a href="rentals.html"><i class="fas fa-tags"></i> Rentals</a></li>
+                <li><a href="reservations.html" class="active"><i class="fas fa-calendar-alt"></i> Reserve</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <span class="sr-only">Menu</span>
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Adventure Awaits in Cozumel</h1>
+            <p>Explore the hidden gems of Cozumel with our premium scooters, jeeps, and ATVs. Experience the freedom of the open road and discover the island's natural beauty.</p>
+            <a href="rentals.html" class="cta-button">View Our Rentals</a>
+            <div class="weather-widget"></div>
+        </section>
+
+        <section id="rentals" class="rental-types">
+            <h2>Our Rental Fleet</h2>
+            <div class="rental-grid">
+                <div class="rental-card">
+                    <h3>Motor Scooters</h3>
+                    <p>Perfect for solo travelers or couples wanting to explore the island with ease. Our scooters are fuel-efficient and easy to maneuver.</p>
+                    <ul>
+                        <li>Honda Metro</li>
+                        <li>Honda Dio</li>
+                        <li>Honda PCX150</li>
+                    </ul>
+                </div>
+                <div class="rental-card">
+                    <h3>Jeeps</h3>
+                    <p>Ideal for families or groups wanting to explore the rugged side of Cozumel. Perfect for beach hopping and off-road adventures.</p>
+                    <ul>
+                        <li>Jeep Wrangler - 4 door manual with A/C</li>
+                        <li>Jeep Wrangler - 2 door with A/C</li>
+                    </ul>
+                </div>
+                <div class="rental-card">
+                    <h3>Side-by-Side ATVs</h3>
+                    <p>Experience the thrill of off-road adventure with our rugged side-by-side ATVs. Great for exploring hidden trails and beaches.</p>
+                    <ul>
+                        <li>Honda Pioneer 1000</li>
+                        <li>Multiple passenger configurations</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="locations" class="locations">
+            <h2>Our Locations</h2>
+            <div class="location-cards">
+                <div class="location-card">
+                    <h3>El Centro Location</h3>
+                    <p>Near the Playa del Carmen-Cozumel Ferry dock</p>
+                    <ul>
+                        <li>Perfect for walk-in tourists</li>
+                        <li>Easy access to local amenities</li>
+                    </ul>
+                </div>
+                <div class="location-card">
+                    <h3>Terminal Puerta Maya</h3>
+                    <p>Near the Terminal Puerta Maya cruise port</p>
+                    <ul>
+                        <li>Quick access to attractions</li>
+                        <li>Group tour friendly</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-links">
+            <h2>Connect With Us</h2>
+            <ul>
+                <li><a href="#" aria-label="Visit our Facebook page"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+            <p>Follow us on social media for the latest updates, special offers, and island adventures!</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Scoots Rentals. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="attributions.html">Attributions</a>
+                <span class="separator">|</span>
+                <p>987 654 3210</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>

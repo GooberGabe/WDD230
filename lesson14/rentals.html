@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scoots - Rental Options and Pricing for Motor Scooters, Jeeps, and ATVs in Cozumel">
+    <title>Rental Options - Scoots Cozumel</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/rentals.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="weather-alert" role="alert"></div>
+
+    <header>
+        <nav>
+            <a href="/" class="logo" aria-label="Scoots Home">
+                <i class="fas fa-motorcycle"></i> Scoots
+            </a>
+            <ul class="nav-links">
+                <li><a href="rentals.html"><i class="fas fa-tags"></i> Rentals</a></li>
+                <li><a href="reservations.html" class="active"><i class="fas fa-calendar-alt"></i> Reserve</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <span class="sr-only">Menu</span>
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="rentals-hero">
+            <h1>Our Rental Fleet</h1>
+            <p>Choose from our selection of scooters, ATVs, and Jeeps to explore Cozumel your way</p>
+        </section>
+
+        <div class="rentals-container">
+            <section class="pricing-overview">
+                <h2>Rental Options and Pricing</h2>
+                <p>Save by making a reservation in advance! All prices listed in USD.</p>
+                <div id="pricing-tables"></div>
+            </section>
+
+            <div class="rental-info">
+                <section id="requirements"></section>
+                <section id="services"></section>
+            </div>
+
+            <section class="rental-cta">
+                <h2>Ready to Start Your Adventure?</h2>
+                <p>Book your vehicle now and save with our reservation pricing!</p>
+                <a href="reservations.html" class="cta-button">Make a Reservation</a>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Scoots Rentals. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="attributions.html">Attributions</a>
+                <span class="separator">|</span>
+                <p>987 654 3210</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/rentals.js"></script>
+</body>
+</html>

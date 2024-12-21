@@ -1,0 +1,120 @@
+{
+    "rental_types": [
+      {
+        "category": "Honda Motor Scooters",
+        "vehicles": [
+          {
+            "name": "Honda Metropolitan",
+            "cc": "49cc",
+            "maxPersons": 1,
+            "pricing": {
+              "reservation": {
+                "halfDay": 20,
+                "fullDay": 30
+              },
+              "walkIn": {
+                "halfDay": 25,
+                "fullDay": 35
+              }
+            }
+          },
+          {
+            "name": "Honda Dio",
+            "cc": "110cc",
+            "maxPersons": 2,
+            "pricing": {
+              "reservation": {
+                "halfDay": 30,
+                "fullDay": 40
+              },
+              "walkIn": {
+                "halfDay": 35,
+                "fullDay": 45
+              }
+            }
+          },
+          {
+            "name": "Honda PCX150",
+            "cc": "149cc",
+            "maxPersons": 2,
+            "pricing": {
+              "reservation": {
+                "halfDay": 40,
+                "fullDay": 50
+              },
+              "walkIn": {
+                "halfDay": 45,
+                "fullDay": 55
+              }
+            }
+          }
+        ]
+      },
+      {
+        "category": "Side-by-Side ATVs",
+        "vehicles": [
+          {
+            "name": "Honda Pioneer 1000",
+            "maxPersons": 4,
+            "pricing": {
+              "reservation": {
+                "halfDay": 50,
+                "fullDay": 70
+              },
+              "walkIn": {
+                "halfDay": 60,
+                "fullDay": 80
+              }
+            }
+          }
+        ]
+      },
+      {
+        "category": "Jeeps",
+        "vehicles": [
+          {
+            "name": "Jeep Wrangler - 4 door with A/C",
+            "features": ["Manual transmission", "A/C"],
+            "maxPersons": 5,
+            "pricing": {
+              "reservation": {
+                "halfDay": 70,
+                "fullDay": 100
+              },
+              "walkIn": {
+                "halfDay": 85,
+                "fullDay": 125
+              }
+            }
+          },
+          {
+            "name": "Jeep Wrangler - 2 door",
+            "features": ["Manual transmission", "Open air"],
+            "maxPersons": 4,
+            "pricing": {
+              "reservation": {
+                "halfDay": 60,
+                "fullDay": 85
+              },
+              "walkIn": {
+                "halfDay": 70,
+                "fullDay": 90
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "rental_agreements": {
+      "requirements": [
+        "A $50 security deposit is required to confirm reservations.",
+        "A valid drivers license is required in hand at the time of rental.",
+        "No one under the age of 12 years of age are allowed to ride on the scooters."
+      ],
+      "services": [
+        "Fuel charge is not included.",
+        "Unlimited mileage.",
+        "Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo."
+      ]
+    }
+  }

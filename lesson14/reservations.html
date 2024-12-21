@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Make a reservation for scooters, ATVs, and Jeeps at Scoots Cozumel">
+    <title>Make a Reservation - Scoots Cozumel</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/reservations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="weather-alert" role="alert"></div>
+
+    <header>
+        <nav>
+            <a href="/" class="logo" aria-label="Scoots Home">
+                <i class="fas fa-motorcycle"></i> Scoots
+            </a>
+            <ul class="nav-links">
+                <li><a href="rentals.html"><i class="fas fa-tags"></i> Rentals</a></li>
+                <li><a href="reservations.html" class="active"><i class="fas fa-calendar-alt"></i> Reserve</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <span class="sr-only">Menu</span>
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reservations-hero">
+            <h1>Make a Reservation</h1>
+            <p>Book your adventure vehicle today and save with our advance reservation pricing!</p>
+        </section>
+
+        <div class="reservations-container">
+            <form class="reservation-form" id="reservation-form">
+                <div class="form-grid">
+                    <section class="form-section">
+                        <h3>Rental Details</h3>
+                        <div class="form-group">
+                            <label for="rental-type" class="required">Select Vehicle</label>
+                            <select id="rental-type" name="rental-type" required>
+                                <option value="">Choose a vehicle</option>
+                            </select>
+                            <div class="error-message">Please select a vehicle</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="rental-period" class="required">Rental Period</label>
+                            <select id="rental-period" name="rental-period" required>
+                                <option value="">Select period</option>
+                                <option value="half-day">Half Day (3 hours)</option>
+                                <option value="full-day">Full Day</option>
+                            </select>
+                            <div class="error-message">Please select a rental period</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="start-date" class="required">Start Date</label>
+                            <input type="date" id="start-date" name="start-date" required>
+                            <div class="error-message">Please select a valid start date</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="end-date" class="required">End Date</label>
+                            <input type="date" id="end-date" name="end-date" required>
+                            <div class="error-message">Please select a valid end date</div>
+                        </div>
+                    </section>
+
+                    <section class="form-section">
+                        <h3>Personal Information</h3>
+                        <div class="form-group">
+                            <label for="name" class="required">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <div class="error-message">Please enter your full name</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="required">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error-message">Please enter a valid email address</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="required">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <div class="error-message">Please enter a valid phone number</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="location" class="required">Home State/Country</label>
+                            <input type="text" id="location" name="location" required>
+                            <div class="error-message">Please enter your home location</div>
+                        </div>
+                    </section>
+
+                    <section class="form-section">
+                        <h3>Cruise Information</h3>
+                        <div class="form-group">
+                            <label for="cruise-guest">Are you a cruise ship guest?</label>
+                            <select id="cruise-guest" name="cruise-guest">
+                                <option value="no">No</option>
+                                <option value="yes">Yes</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" id="cruise-line-group" style="display: none;">
+                            <label for="cruise-line">Cruise Line</label>
+                            <input type="text" id="cruise-line" name="cruise-line">
+                        </div>
+                    </section>
+
+                    <section class="rental-agreement full-width">
+                        <h3>Rental Agreement</h3>
+                        <div class="agreement-content">
+                            <p>By submitting this reservation, you acknowledge and agree to the following:</p>
+                            <ul>
+                                <li>You must present a valid driver's license at the time of rental</li>
+                                <li>No one under 12 years of age is allowed on scooters</li>
+                                <li>You accept responsibility for any damage to the vehicle</li>
+                            </ul>
+                        </div>
+                        <div class="agreement-checkbox">
+                            <input type="checkbox" id="agreement" name="agreement" required>
+                            <label for="agreement" class="required">I have read and agree to the rental terms and conditions</label>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="submit-container">
+                    <button type="submit" class="submit-button">
+                        Complete Reservation
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Scoots Rentals. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="attributions.html">Attributions</a>
+                <span class="separator">|</span>
+                <p>987 654 3210</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/reservations.js"></script>
+</body>
+</html>
